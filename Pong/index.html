@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Pong Game Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menu_text = new sjs.Text("MENU", 28, "blue");
+ menu_text.centerH();
+ 
+ var startBtn = new sjs.Button("Start", function(){
+ 	window.location = "pong.html";
+});
+ 	startBtn.center();
+ var info_text = new sjs.Text("Created By Rebekah Schmersal", 20, "blue");
+ info_text.bottom().right();
+ var how_text = new sjs.Text("Have fun!",18, "blue");
+ how_text.bottom().left();
+ var smile_text = new sjs.Text("#!@", 16, "blue");
+ smile_text.top().left();
+ var hi_text = new sjs.Text("@!#", 16, "blue");
+ hi_text.top().right();
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
